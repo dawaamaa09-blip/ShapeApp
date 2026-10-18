@@ -22,6 +22,10 @@ namespace ShapeApp
             AddShape((b, c) => new LineShape(b, c));
         }
 
+        private void triangleMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new TriangleShape(b, c));
+        }
         // ДААЛГАВАР: Designer дээр "Дүрс" цэсэнд шинэ мөр нэмээд (жишээ нь "Тэгш өнцөгт"),
         // түүн дээр давхар товшиход дараах шиг метод автоматаар үүснэ.
         // Дотор нь өөрийн классаа үүсгэх ганц мөр бичнэ:
@@ -70,5 +74,7 @@ namespace ShapeApp
         {
             canvas.Invalidate();
         }
+
+       
     }
 }
