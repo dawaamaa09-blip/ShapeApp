@@ -75,6 +75,9 @@ namespace ShapeApp
             canvas.Invalidate();
         }
 
-       
+        private void тэгшӨнцөгтToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new RectangleShape(b, c));
+        }
     }
 }

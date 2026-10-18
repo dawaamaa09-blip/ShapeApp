@@ -32,9 +32,10 @@
             lineMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             clearMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            гурвалжинtriangleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             canvasHost = new System.Windows.Forms.Panel();
             canvas = new System.Windows.Forms.PictureBox();
-            гурвалжинtriangleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            тэгшӨнцөгтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             canvasHost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)canvas).BeginInit();
@@ -53,7 +54,7 @@
             // 
             // shapeMenu
             // 
-            shapeMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { lineMenuItem, toolStripSeparator1, clearMenuItem, гурвалжинtriangleMenuItem });
+            shapeMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { lineMenuItem, toolStripSeparator1, clearMenuItem, гурвалжинtriangleMenuItem, тэгшӨнцөгтToolStripMenuItem });
             shapeMenu.Name = "shapeMenu";
             shapeMenu.Size = new System.Drawing.Size(78, 34);
             shapeMenu.Text = "Дүрс";
@@ -76,6 +77,13 @@
             clearMenuItem.Size = new System.Drawing.Size(315, 40);
             clearMenuItem.Text = "Цэвэрлэх";
             clearMenuItem.Click += clearMenuItem_Click;
+            // 
+            // гурвалжинtriangleMenuItem
+            // 
+            гурвалжинtriangleMenuItem.Name = "гурвалжинtriangleMenuItem";
+            гурвалжинtriangleMenuItem.Size = new System.Drawing.Size(315, 40);
+            гурвалжинtriangleMenuItem.Text = "Гурвалжин";
+            гурвалжинtriangleMenuItem.Click += triangleMenuItem_Click;
             // 
             // canvasHost
             // 
@@ -102,12 +110,12 @@
             canvas.Paint += canvas_Paint;
             canvas.Resize += canvas_Resize;
             // 
-            // гурвалжинtriangleMenuItem
+            // тэгшӨнцөгтToolStripMenuItem
             // 
-            гурвалжинtriangleMenuItem.Name = "triangleMenuItem";
-            гурвалжинtriangleMenuItem.Size = new System.Drawing.Size(315, 40);
-            гурвалжинtriangleMenuItem.Text = "Гурвалжин";
-            гурвалжинtriangleMenuItem.Click += triangleMenuItem_Click;
+            тэгшӨнцөгтToolStripMenuItem.Name = "тэгшӨнцөгтToolStripMenuItem";
+            тэгшӨнцөгтToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            тэгшӨнцөгтToolStripMenuItem.Text = "Тэгш өнцөгт";
+            тэгшӨнцөгтToolStripMenuItem.Click += тэгшӨнцөгтToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -142,5 +150,6 @@
         private System.Windows.Forms.Panel canvasHost;
         private System.Windows.Forms.PictureBox canvas;
         private System.Windows.Forms.ToolStripMenuItem гурвалжинtriangleMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem тэгшӨнцөгтToolStripMenuItem;
     }
 }
