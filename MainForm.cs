@@ -79,5 +79,10 @@ namespace ShapeApp
         {
             AddShape((b, c) => new RectangleShape(b, c));
         }
+
+        private void дугуйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new CircleShape(b, c));
+        }
     }
 }
