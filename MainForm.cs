@@ -84,5 +84,10 @@ namespace ShapeApp
         {
             AddShape((b, c) => new CircleShape(b, c));
         }
+
+        private void pieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new PieShape(b, c));
+        }
     }
 }
