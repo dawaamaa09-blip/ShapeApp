@@ -89,5 +89,10 @@ namespace ShapeApp
         {
             AddShape((b, c) => new PieShape(b, c));
         }
+
+        private void олонӨнцөгтToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new PolygonShape(b, c));
+        }
     }
 }
