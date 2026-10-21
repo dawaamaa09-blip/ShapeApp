@@ -36,9 +36,10 @@
             тэгшӨнцөгтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             дугуйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             pieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            олонӨнцөгтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             canvasHost = new System.Windows.Forms.Panel();
             canvas = new System.Windows.Forms.PictureBox();
-            олонӨнцөгтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            муруйШугамToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             canvasHost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)canvas).BeginInit();
@@ -57,7 +58,7 @@
             // 
             // shapeMenu
             // 
-            shapeMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { lineMenuItem, toolStripSeparator1, clearMenuItem, гурвалжинtriangleMenuItem, тэгшӨнцөгтToolStripMenuItem, дугуйToolStripMenuItem, pieToolStripMenuItem, олонӨнцөгтToolStripMenuItem });
+            shapeMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { lineMenuItem, toolStripSeparator1, clearMenuItem, гурвалжинtriangleMenuItem, тэгшӨнцөгтToolStripMenuItem, дугуйToolStripMenuItem, pieToolStripMenuItem, олонӨнцөгтToolStripMenuItem, муруйШугамToolStripMenuItem });
             shapeMenu.Name = "shapeMenu";
             shapeMenu.Size = new System.Drawing.Size(78, 34);
             shapeMenu.Text = "Дүрс";
@@ -109,6 +110,13 @@
             pieToolStripMenuItem.Text = "Pie";
             pieToolStripMenuItem.Click += pieToolStripMenuItem_Click;
             // 
+            // олонӨнцөгтToolStripMenuItem
+            // 
+            олонӨнцөгтToolStripMenuItem.Name = "олонӨнцөгтToolStripMenuItem";
+            олонӨнцөгтToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            олонӨнцөгтToolStripMenuItem.Text = "Олон Өнцөгт";
+            олонӨнцөгтToolStripMenuItem.Click += олонӨнцөгтToolStripMenuItem_Click;
+            // 
             // canvasHost
             // 
             canvasHost.Controls.Add(canvas);
@@ -134,12 +142,12 @@
             canvas.Paint += canvas_Paint;
             canvas.Resize += canvas_Resize;
             // 
-            // олонӨнцөгтToolStripMenuItem
+            // муруйШугамToolStripMenuItem
             // 
-            олонӨнцөгтToolStripMenuItem.Name = "олонӨнцөгтToolStripMenuItem";
-            олонӨнцөгтToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
-            олонӨнцөгтToolStripMenuItem.Text = "Олон Өнцөгт";
-            олонӨнцөгтToolStripMenuItem.Click += олонӨнцөгтToolStripMenuItem_Click;
+            муруйШугамToolStripMenuItem.Name = "муруйШугамToolStripMenuItem";
+            муруйШугамToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            муруйШугамToolStripMenuItem.Text = "Муруй шугам";
+            муруйШугамToolStripMenuItem.Click += муруйШугамToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -178,5 +186,6 @@
         private System.Windows.Forms.ToolStripMenuItem дугуйToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem олонӨнцөгтToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem муруйШугамToolStripMenuItem;
     }
 }

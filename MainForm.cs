@@ -94,5 +94,10 @@ namespace ShapeApp
         {
             AddShape((b, c) => new PolygonShape(b, c));
         }
+
+        private void муруйШугамToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new CurveShape(b, c));
+        }
     }
 }
