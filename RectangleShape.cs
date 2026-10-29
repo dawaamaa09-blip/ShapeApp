@@ -20,10 +20,10 @@ namespace ShapeApp
             using (var pen = MakePen())
             using (var brush = MakeFill())
             {
-                g.FillRectangle(brush, Bounds);   // дотор нь будна
-                g.DrawRectangle(pen, Bounds);     // хүрээг зурна
+                g.FillRectangle(brush, Bounds);   
+                g.DrawRectangle(pen, Bounds);     
             }
-            base.Draw(g);   // нэрийг доор нь бичнэ
+            base.Draw(g);  
         }
     }
 }

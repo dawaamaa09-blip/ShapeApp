@@ -34,13 +34,6 @@ namespace ShapeApp
         // {
         //     AddShape((b, c) => new RectangleShape(b, c));
         // }
-
-        private void clearMenuItem_Click(object sender, EventArgs e)
-        {
-            shapes.Clear();
-            canvas.Invalidate();
-        }
-
         // Санамсаргүй байрлал, хэмжээ, өнгөөр дүрс үүсгэж жагсаалтад нэмнэ
         private void AddShape(Func<Rectangle, Color, Shape> factory)
         {
@@ -98,6 +91,22 @@ namespace ShapeApp
         private void муруйШугамToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddShape((b, c) => new CurveShape(b, c));
+        }
+
+        private void цэвэрлэхToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            shapes.Clear();
+            canvas.Invalidate();
+        }
+
+        private void одToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new StarShape(b, c));
+        }
+
+        private void нумToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShape((b, c) => new ArcShape(b, c));
         }
     }
 }

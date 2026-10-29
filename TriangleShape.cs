@@ -29,10 +29,10 @@ namespace ShapeApp
             using (var pen = MakePen())
             using (var brush = MakeFill())
             {
-                g.FillPolygon(brush, _points);   // дотор нь будна
-                g.DrawPolygon(pen, _points);     // хүрээг зурна
+                g.FillPolygon(brush, _points);  
+                g.DrawPolygon(pen, _points);    
             }
-            base.Draw(g);   // нэрийг доор нь бичнэ
+            base.Draw(g); 
         }
     }
 }

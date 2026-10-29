@@ -20,10 +20,10 @@ namespace ShapeApp
             using (var pen = MakePen())
             using (var brush = MakeFill())
             {
-                g.FillEllipse(brush, Bounds);   // дотор нь будна
-                g.DrawEllipse(pen, Bounds);     // хүрээг зурна
+                g.FillEllipse(brush, Bounds);  
+                g.DrawEllipse(pen, Bounds);   
             }
-            base.Draw(g);   // нэрийг доор нь бичнэ
+            base.Draw(g); 
         }
     }
 }
